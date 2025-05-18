@@ -1,0 +1,91 @@
+.dashboardContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboardHeader {
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e0e6ed 100%);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dashboardHeader h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.welcomeMessage {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.userName {
+  font-weight: bold;
+  color: #3498db;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.menuCard {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menuCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cardIcon {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+}
+
+.cardContent {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
+
+.cardContent h3 {
+  color: #2c3e50;
+  margin-bottom: 0.8rem;
+  font-size: 1.4rem;
+}
+
+.cardContent p {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.menuButton {
+  display: block;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  text-align: center;
+  padding: 0.8rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.menuButton:hover {
+  background: linear-gradient(to right, #2980b9, #2471a3);
+  letter-spacing: 0.5px;
+}

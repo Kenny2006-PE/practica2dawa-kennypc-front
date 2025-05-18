@@ -1,0 +1,133 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a50044 0%, #004d98 100%);
+  padding: 1rem;
+}
+
+.authCard {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 420px;
+  transition: transform 0.3s ease;
+}
+
+.authCard:hover {
+  transform: translateY(-5px);
+}
+
+.authCard h2 {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  color: #2c3e50;
+  font-weight: 600;
+  position: relative;
+}
+
+.authCard h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background-color: #3498db;
+  border-radius: 2px;
+}
+
+.formGroup {
+  margin-bottom: 1.2rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  background-color: #f9f9f9;
+}
+
+.formGroup input:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+  background-color: white;
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+  background-color: #fff8f8 !important;
+}
+
+.errorText {
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.4rem;
+}
+
+.errorMessage {
+  background-color: #fdecea;
+  color: #e74c3c;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.submitButton {
+  width: 100%;
+  background: linear-gradient(to right, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.submitButton:hover {
+  background: linear-gradient(to right, #2980b9, #2471a3);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+.authLink {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #7f8c8d;
+}
+
+.authLink a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.authLink a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}

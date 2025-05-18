@@ -1,0 +1,202 @@
+.tablePageContainer {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  background-color: #004d98; /* Azul Barça */
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pageHeader h1 {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.crestIcon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #a50044 50%, #004d98 50%); /* Granate y azul Barça */
+  border-radius: 50%;
+  position: relative;
+}
+
+.crestIcon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #ffed02; /* Amarillo para el borde */
+}
+
+.addButton {
+  background-color: #a50044; /* Granate Barça */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.addButton:hover {
+  background-color: #7c0033;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.errorMessage {
+  background-color: rgba(255, 55, 55, 0.1);
+  color: #d60000;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #d60000;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #004d98;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.noData {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-style: italic;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.dataTable th {
+  background-color: #004d98; /* Azul Barça */
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.dataTable tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+.dataTable tr:last-child td {
+  border-bottom: none;
+}
+
+.dataTable tr:hover {
+  background-color: #f0f8ff;
+}
+
+.actionButtons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.editButton {
+  background-color: #004d98; /* Azul Barça */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.editButton:hover {
+  background-color: #003b75;
+  transform: translateY(-1px);
+}
+
+.deleteButton {
+  background-color: #a50044; /* Granate Barça */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.deleteButton:hover {
+  background-color: #7c0033;
+  transform: translateY(-1px);
+}
+
+.formOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.formContainer {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-top: 5px solid #004d98; /* Azul Barça */
+}
